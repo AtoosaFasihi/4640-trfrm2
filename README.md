@@ -27,7 +27,7 @@
 * create a file in the dev directory called "do_token"
 * copy the same token from last step and save it to the do_token file (`export DO_API_TOKEN=<my API tocken>`)
 * source the do_token file by running 
-```source .env```
+```source do_token```
 
 * For checking the ansible inventory graph run 
 ``` ansible-inventory --graph ```
@@ -39,9 +39,10 @@
 
 ![ping](https://user-images.githubusercontent.com/71790429/201448877-d50c0bb1-258c-40c0-b206-42ec1cfdff2f.JPG)
 
-*To run the playbook run
+* To run the playbook run
 
 ```  ansible-playbook nginx_setup.yml -u root ```
+
 ![playbook](https://user-images.githubusercontent.com/71790429/201448995-306d306e-4b1a-4aee-9ad7-06d5d9fb2308.JPG)
 
 * To check if everything works correctly go to the loadbalancer's IP address and you should see the nginx page as shown below:
